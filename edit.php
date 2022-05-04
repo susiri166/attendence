@@ -55,7 +55,7 @@
                 <label for="phone">Contact Number</label>
                 <input type="text" class="form-control" id="phone" value="<?php echo $attendee['cotactno']?>" aria-describedby="emailHelp" placeholder="Enter phone no" name="phone">   
             </div>
-            
+            <a href="./viewrecords.php" class="btn btn-default">Back To List</a>
             <button type="submit" class="btn btn-success btn-block" name="submit">Save Changes</button>
        
         </form>
