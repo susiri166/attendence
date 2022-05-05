@@ -1,8 +1,15 @@
 <?php 
-    $host="localhost";
-    $db="attendence_db";
-    $user="root";
-    $pass="";
+    //devlopment connection
+    //$host="localhost";
+    //$db="attendence_db";
+    ///$user="root";
+    //$pass="";
+    
+    //remote database connection
+    $host="remotemysql.com";
+    $db="VqOJpQEYAz";
+    $user="VqOJpQEYAz";
+    $pass="MVmVf3sM5u";
 
     $dsn="mysql:host=$host;dbname=$db";
 
