@@ -11,7 +11,7 @@
     //$user="VqOJpQEYAz";
    // $pass="MVmVf3sM5u";
 
-    $dsn="mysql:host=$host;dbname=$db";$pass="";
+    $dsn="mysql:host=$host;dbname=$db";
 
     try {
         $pdo=new PDO($dsn,$user,$pass);
@@ -25,5 +25,5 @@
     $crud=new crud($pdo);
     $user=new user($pdo);
 
-    $user->insertuser("admin","password");
+   // $user->insertuser("admin","password");
 ?>

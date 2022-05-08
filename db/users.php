@@ -6,7 +6,7 @@
          //constructor to initialize private variable to the database connection
          function __construct($conn)
          {
-             $this->db=$conn;
+            $this->db=$conn;
          }
         public function insertuser($username,$password){
                 try {
@@ -51,7 +51,7 @@
         }
         public function getUserByname($username){
             try {
-                $sql="SELECT COUNT(*) as num FROM users =:username";
+                $sql="SELECT count(*) as num FROM users WHERE username = :username";
                 $stmt=$this->db->prepare($sql);
                 $stmt->bindparam(':username',$username);
                 $stmt->execute();
