@@ -12,6 +12,14 @@
         $contact= $_POST['phone'];
         $speciality=$_POST['specialty'];
 
+
+        $orig_file=$_FILES["avatar"]["tmp_name"];
+        $ext=pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
+        $target_dir='uploads/';
+        $destination="$target_dir$contact.$ext";
+        move_uploaded_file($orig_file,$destination);
+        exit();
+
         //Call function to insrt and trick if sucess or not
         $isSusess=$crud->insertAttendees($fname,$lname,$dob,$email,$contact,$speciality);
 

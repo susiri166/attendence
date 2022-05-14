@@ -7,7 +7,7 @@
     ?>
 
         <h1 class="text-center">Registration IT Conference</h1>
-    <form method="POST" action="sucess.php">
+    <form method="POST" action="sucess.php" enctype="multipart/form-data">
         <div class="form-group">
             <label for="Firstname">First Name</label>
             <input type="text" class="form-control" id="Firstname" aria-describedby="emailHelp" placeholder="Enter Firstname" name="Firstname">     
@@ -40,12 +40,18 @@
             <label for="phone">Contact Number</label>
             <input type="text" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Enter phone no" name="phone">   
         </div>
-        
+        <br>
+        <div class="custom-file">
+            <input type="file" accept="image/*" class="custom-file-input" id="avatar" name="avatar">
+            <label class="custom-file-label" for="avatar">Choose File</label>
+            <small id="avatar" class="form-text text-danger">File Upload is Optional</small>
+        </div>
+        <br><br>
         <button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button>
 
     </form>
 </div>
-<br><br><br><br><br>
+
 
 
 <?php 

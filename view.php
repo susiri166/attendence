@@ -2,7 +2,7 @@
     $title='index';
     require_once './includes/header.php' ;
     require_once './db/conn.php';
- 
+    require_once './includes/auth_check.php';
     //get attende by id
     if(isset($_GET['id'])){
         $id=$_GET['id'];
